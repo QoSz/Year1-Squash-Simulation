@@ -1,0 +1,26 @@
+Dear CM1103 students,
+I've had a few repeated queries about the coursework:
+- For the "transcript", I’d just like to see that all the functions run and what output they produce (so that I don’t have to run all of them myself).
+Please could you either start an interactive python shell and the command prompt, call each relevant function in turn, and copy everything into a text or word file, e.g.
+Python 3.9.1 | packaged by conda-forge | (default, Dec 9 2020, 01:07:47)
+[Clang 11.0.0 ] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from squash import *
+>>> game(60, 40)
+(11, 4)
+- For 1e, you could approach the problem by simulation:
+    - Write a function match(ra, rb, n) which simulates a match between players of abilities ra and rb where the first person to win n games is the winner, and returns the score in games. This should use the function you have written to simulate a game in question 1a.
+
+    - Write an equivalent function to 1b that simulates many matches (using the function above) to work out the probability that player a wins a “first to n games” match.
+
+    - Write some code that calls this function for values of n = 1, 2, 3, …. Etc., stopping when you get to a value bigger than 0.9. This last value of n is the answer.
+or mathematically:
+Suppose A and B are playing a best of three match. If they played all 3 matches, one possible outcome is that A wins the first game, B the second and A the third (i.e. ABA).
+• What are the other outcomes that result in A winning the match? (Note that not all will need all three games to be played in every case)
+• Can you use 1b to work out the probability that A wins a single game?
+• Can you then work out the probability of each match outcome where A wins?
+• Can you combine them all to give a single probability that A wins the match?
+• If this is less than 0.9, do the same for a best of 5 match
+- If it is more convenient, you may submit a single zip file of all other files required for your submission,
+Cheers
+Stuart
